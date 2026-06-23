@@ -1,4 +1,4 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <title>CENTRAL BOARD OF SECONDARY EDUCATION</title>
@@ -6,156 +6,152 @@
 <style>
    * {
       box-sizing: border-box;
+      margin: 0;
+      padding: 0;
       }
    body { 
       font-family: 'Arial', sans-serif;
       background: url('bg.jpg') no-repeat center center fixed;
       background-size: cover;
       color: white;
-      margin: 0;
-      padding: 15px;
+      padding: 8px;
       min-height: 100vh;
       }
    .header {
       text-align: center;
-      margin: 15px 0 20px 0;
+      margin: 8px 0 12px 0;
       }
    h1 { 
       color: #00ffff; 
-      font-size: 20px;
-      text-shadow: 0 0 20px cyan, 0 0 10px cyan, 0 0 3px black;
-      margin: 0;
-      letter-spacing: 1.5px;
+      font-size: 16px;
+      text-shadow: 0 0 12px cyan, 0 0 6px cyan;
+      letter-spacing: 1px;
       font-weight: bold;
       }
    form { 
-      max-width: 380px;
+      max-width: 280px;
       margin: auto;
       background: transparent;
-      padding: 15px 18px; 
-      border-radius: 15px; 
-      box-shadow: 0 0 60px rgba(0, 255, 255, 0.8);
-      border: 2px solid cyan;
+      padding: 10px 12px; 
+      border-radius: 10px; 
+      box-shadow: 0 0 40px rgba(0, 255, 255, 0.6);
+      border: 1.5px solid cyan;
       }
    fieldset { 
       border: none;
       padding: 0; 
-      margin-bottom: 22px;
+      margin-bottom: 15px;
       background: transparent;
       }
    legend { 
       color: #00ffff;
       padding: 0; 
-      margin-bottom: 12px;
+      margin-bottom: 8px;
       font-weight: bold; 
       background: transparent;
       border: none;
-      text-shadow: 0 0 15px cyan, 0 0 8px cyan;
-      font-size: 17px;
-      letter-spacing: 1px;
+      text-shadow: 0 0 10px cyan;
+      font-size: 14px;
       display: block;
       width: 100%;
       }
    input, textarea, select {
       width: 100%;
-      padding: 9px 10px;
-      margin: 5px 0 14px 0; 
-      border: 2px solid cyan;
-      border-radius: 8px;
-      background: rgba(0, 0, 0, 0.8); 
+      padding: 7px 8px;
+      margin: 3px 0 10px 0; 
+      border: 1px solid cyan;
+      border-radius: 5px;
+      background: rgba(0, 0, 0, 0.9); 
       color: white; 
-      font-size: 14px;
-      text-shadow: 0 0 3px cyan;
-      height: 40px;
+      font-size: 12px;
+      text-shadow: 0 0 2px cyan;
+      height: 32px;
       }
    textarea {
       height: auto;
-      padding: 9px 10px;
+      min-height: 50px;
       }
    input:focus, textarea:focus, select:focus {
       outline: none;
-      border: 2px solid #00ffff;
-      box-shadow: 0 0 20px cyan;
-      background: rgba(0, 0, 0, 0.9);
+      border: 1px solid #00ffff;
+      box-shadow: 0 0 12px cyan;
       }
    input[type="radio"], input[type="checkbox"] {
       width: auto;
       height: auto;
-      margin-right: 6px;
-      margin-bottom: 6px;
+      margin-right: 4px;
+      margin-bottom: 4px;
       accent-color: cyan;
-      transform: scale(1.2);
-      cursor: pointer;
+      transform: scale(1);
       }
    label { 
       display: block;
-      margin-top: 10px; 
-      margin-bottom: 2px;
+      margin-top: 6px; 
+      margin-bottom: 1px;
       color: white;
       font-weight: 600;
-      font-size: 13px;
-      letter-spacing: 0.3px;
-      text-shadow: 0 0 10px cyan, 0 0 3px black;
+      font-size: 11px;
+      text-shadow: 0 0 6px cyan;
       }
    .inline-label { 
       display: inline-block; 
-      margin-right: 15px;
-      margin-bottom: 8px;
+      margin-right: 10px;
+      margin-bottom: 5px;
       cursor: pointer;
       color: white;
-      text-shadow: 0 0 8px cyan, 0 0 3px black;
-      font-size: 13px;
+      text-shadow: 0 0 5px cyan;
+      font-size: 11px;
       }
    button {
       background: cyan;
       color: black; 
-      padding: 12px 20px; 
-      border: 2px solid #00ffff; 
-      border-radius: 10px;
+      padding: 8px 15px; 
+      border: 1.5px solid #00ffff; 
+      border-radius: 6px;
       font-weight: bold;
       cursor: pointer; 
       width: 100%; 
-      font-size: 18px; 
-      box-shadow: 0 0 40px cyan;
-      margin-top: 12px;
-      letter-spacing: 2px;
+      font-size: 14px; 
+      box-shadow: 0 0 25px cyan;
+      margin-top: 8px;
+      letter-spacing: 1px;
       }
    button:hover {
-      box-shadow: 0 0 60px cyan;
+      box-shadow: 0 0 40px cyan;
       background: #00ffff;
       }
    button:disabled { 
       background: #444;
       color: #888;
       box-shadow: none;
-      border: 2px solid #666;
+      border: 1.5px solid #666;
       }
    h3 { 
       text-align: center;
       color: #00ffff; 
-      font-size: 15px;
-      text-shadow: 0 0 15px cyan;
-      margin: 10px 0 12px 0;
+      font-size: 13px;
+      text-shadow: 0 0 10px cyan;
+      margin: 6px 0 8px 0;
       }
    #count {
       color: #00ffff;
       font-weight: bold;
       text-align: center;
-      font-size: 14px;
-      margin: 10px 0;
-      text-shadow: 0 0 15px cyan;
+      font-size: 12px;
+      margin: 6px 0;
+      text-shadow: 0 0 10px cyan;
       }
    #msg { 
       text-align: center;
-      margin-top: 12px; 
+      margin-top: 8px; 
       font-weight: bold; 
-      font-size: 14px;
+      font-size: 12px;
       color: #00ffff;
-      text-shadow: 0 0 12px cyan;
+      text-shadow: 0 0 8px cyan;
       }
    ::placeholder {
-      color: rgba(200, 200, 200, 0.7);
-      font-size: 13px;
+      color: rgba(200, 200, 200, 0.5);
+      font-size: 11px;
       }
 </style>
 </head>
@@ -199,7 +195,7 @@
   <label>IDENTIFICATION MARK:</label>
   <input type="text" name="Identification Mark" maxlength="25">
   <label>STUDENT ADDRESS:</label>
-  <textarea name="Student Address" rows="3" placeholder="Gaon, Post, Thana" required></textarea>
+  <textarea name="Student Address" rows="2" placeholder="Gaon, Post, Thana" required></textarea>
 </fieldset>
 
 <fieldset>
@@ -235,7 +231,7 @@
   <label>SCHOOL CODE:</label>
   <input type="text" name="School Code" placeholder="311020" pattern="[0-9]{6}" title="6 digit ka school code daale" maxlength="6" oninput="this.value=this.value.replace(/[^0-9]/g,'')" required>
   <label>SCHOOL KA ADDRESS:</label>
-  <textarea name="School Address" rows="3" placeholder="School ka full address" required></textarea>
+  <textarea name="School Address" rows="2" placeholder="School ka full address" required></textarea>
   <label>DISTRICT:</label>
   <input type="text" name="District" placeholder="Lakhisarai" required>
   <label>STATE:</label>
