@@ -10,80 +10,110 @@
       background-size: cover;
       color: white;
       margin: 0;
-      padding: 20px;
+      padding: 15px;
       }
    form { 
       max-width: 600px;
       margin: auto;
-      background: rgba(26, 26, 26, 0.15);
-      backdrop-filter: blur(4px);
+      background: rgba(0, 0, 0, 0.08);
+      backdrop-filter: blur(6px);
       padding: 20px; 
-      border-radius: 10px; 
-      box-shadow: 0 0 35px cyan;
-      border: 1px solid rgba(0, 255, 255, 0.3);
+      border-radius: 12px; 
+      box-shadow: 0 0 40px rgba(0, 255, 255, 0.8);
+      border: 2px solid rgba(0, 255, 255, 0.5);
       }
    fieldset { 
-      border: 2px solid cyan;
-      border-radius: 8px;
+      border: 2px solid rgba(0, 255, 255, 0.7);
+      border-radius: 10px;
       padding: 15px; 
       margin-bottom: 20px;
-      box-shadow: 0 0 25px cyan;
-      background: rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0 30px rgba(0, 255, 255, 0.6);
+      background: rgba(0, 0, 0, 0.05);
       }
-   legend { color: cyan;
-      padding: 0 10px; 
+   legend { 
+      color: cyan;
+      padding: 5px 15px; 
       font-weight: bold; 
-      background: rgba(0, 0, 0, 0.6);
-      border-radius: 5px;
+      background: rgba(0, 0, 0, 0.8);
+      border-radius: 6px;
+      border: 1px solid cyan;
+      text-shadow: 0 0 15px cyan;
+      font-size: 16px;
       }
    input, textarea, select {
       width: 95%;
-      padding: 8px;
+      padding: 12px;
       margin: 5px 0 15px 0; 
-      border:1px solid #444;
-      border-radius: 4px;
-      background: rgba(42, 42, 42, 0.7); 
+      border:1px solid rgba(0, 255, 255, 0.6);
+      border-radius: 6px;
+      background: rgba(20, 20, 20, 0.4); 
       color: white; 
+      font-size: 16px;
+      }
+   input:focus, textarea:focus, select:focus {
+      outline: none;
+      border: 2px solid cyan;
+      box-shadow: 0 0 15px cyan;
+      background: rgba(20, 20, 20, 0.6);
       }
    input[type="radio"], input[type="checkbox"] {
       width: auto;
-      margin-right: 5px;
+      margin-right: 8px;
+      accent-color: cyan;
+      transform: scale(1.2);
       }
-   label { display: block;
-      margin-top: 10px; 
+   label { 
+      display: block;
+      margin-top: 12px; 
+      text-shadow: 0 0 8px black, 0 0 3px black;
+      font-weight: 600;
       }
    .inline-label { 
       display: inline-block; 
-      margin-right: 15px;
+      margin-right: 20px;
       }
    button {
-      background: cyan;
+      background: rgba(0, 255, 255, 0.9);
       color: black; 
-      padding: 12px 30px; 
+      padding: 14px 30px; 
       border: none; 
-      border-radius: 5px;
+      border-radius: 8px;
       font-weight: bold;
       cursor: pointer; 
       width: 100%; 
-      font-size: 19px; 
+      font-size: 20px; 
+      box-shadow: 0 0 25px cyan;
+      margin-top: 10px;
       }
-   button:disabled { background: #555;
+   button:hover {
+      background: cyan;
+      box-shadow: 0 0 40px cyan;
+      }
+   button:disabled { 
+      background: #555;
       color: #999;
       }
    h1, h3 { 
       text-align: center;
       color: cyan; 
-      font-size:20px;
-      text-shadow: 0 0 10px cyan;
+      font-size:22px;
+      text-shadow: 0 0 20px cyan, 0 0 10px black;
+      margin: 10px 0;
       }
-   #msg { text-align: center;
+   #count {
+      color: cyan;
+      font-weight: bold;
+      text-shadow: 0 0 15px cyan;
+      text-align: center;
+      }
+   #msg { 
+      text-align: center;
       margin-top: 15px; 
       font-weight: bold; 
       }
 </style>
 </head>
 <body>
-<!-- Baaki ka HTML same rahega, sirf CSS change kiya hai -->
 <fieldset>
   <legend>Form</legend>
   <h1>CENTRAL BOARD OF SECONDARY EDUCATION</h1></fieldset>
@@ -108,7 +138,8 @@
   <label class="inline-label"><input type="radio" name="Gender" value="MALE" required> MALE</label>
   <label class="inline-label"><input type="radio" name="Gender" value="FEMALE"> FEMALE</label>
   <label>NATIONALITY:</label>
-  <input type="text" name="Nationality" value="INDIAN" required>      <label>RELIGION:</label>
+  <input type="text" name="Nationality" value="INDIAN" required>      
+  <label>RELIGION:</label>
   <label class="inline-label"><input type="radio" name="Religion" value="HINDU"> HINDU</label>
   <label class="inline-label"><input type="radio" name="Religion" value="MUSLIM"> MUSLIM</label>
   <label class="inline-label"><input type="radio" name="Religion" value="SIKH"> SIKH</label>
@@ -148,7 +179,8 @@
   <label><input type="checkbox" name="Languages" value="English" class="lang-check"> English</label>
   <label><input type="checkbox" name="Languages" value="Bhojpuri" class="lang-check"> Bhojpuri</label>
   <label><input type="checkbox" name="Languages" value="Punjabi" class="lang-check"> Punjabi</label>
-  <label><input type="checkbox" name="Languages" value="Bengali" class="lang-check"> Bengali</label>   </fieldset>
+  <label><input type="checkbox" name="Languages" value="Bengali" class="lang-check"> Bengali</label>   
+</fieldset>
 
 <fieldset>
   <legend>School Details</legend>
@@ -168,7 +200,8 @@
    <option value="Uttar Pradesh">Uttar Pradesh</option>
    <option value="West Bengal">West Bengal</option>
    <option value="Madhya Pradesh">Madhya Pradesh</option>
-   <option value="Rajasthan">Rajasthan</option>    </select>
+   <option value="Rajasthan">Rajasthan</option>    
+</select>
  <label>PIN CODE:</label>
    <input type="text" name="PIN Code" placeholder="811311" pattern="[0-9]{6}" maxlength="6" oninput="this.value=this.value.replace(/[^0-9]/g,'')" required>
  </fieldset>
@@ -177,48 +210,45 @@
    <p id="msg"></p>
  </form>
 
-          <script>
-      // 3 Subject wala logic
-      const checkboxes = document.querySelectorAll('.subject-check');
-      const countText = document.getElementById('count');
-      let maxLimit = 3;
+    <script>
+    const checkboxes = document.querySelectorAll('.subject-check');
+    const countText = document.getElementById('count');
+    let maxLimit = 3;
 
-      checkboxes.forEach(checkbox => {
-      checkbox.addEventListener('change', function() {
-      let checkedCount = document.querySelectorAll('.subject-check:checked').length;
-      if (checkedCount > maxLimit) {
-      this.checked = false;
-      alert('Bhai sirf 3 subject hi choose kar sakte ho!');
-      } else {
-      countText.textContent = checkedCount + ' / 3 Selected';
-      }
-     });
+    checkboxes.forEach(checkbox => {
+    checkbox.addEventListener('change', function() {
+    let checkedCount = document.querySelectorAll('.subject-check:checked').length;
+    if (checkedCount > maxLimit) {
+    this.checked = false;
+    alert('Bhai sirf 3 subject hi choose kar sakte ho!');
+    } else {
+    countText.textContent = checkedCount + ' / 3 Selected';
+    }
+   });
+  });
+
+    document.getElementById('cbseForm').addEventListener('submit', function(e) {
+    let subjectCount = document.querySelectorAll('.subject-check:checked').length;
+    let langCount = document.querySelectorAll('.lang-check:checked').length;
+    let btn = document.getElementById('submitBtn');
+    let msg = document.getElementById('msg');
+
+    if (subjectCount!== 3) {
+    e.preventDefault();
+    alert('Exactly 3 subject select karna zaroori hai!');
+    return;
+    }
+    if (langCount === 0) {
+    e.preventDefault();
+    alert('Kam se kam 1 language to select karo!');
+    return;
+    }
+
+    btn.disabled = true;
+    btn.textContent = 'Submitting...';
+    msg.style.color = 'cyan';
+    msg.textContent = 'Please wait...';
     });
-
-      // Form validation + success message
-      document.getElementById('cbseForm').addEventListener('submit', function(e) {
-      let subjectCount = document.querySelectorAll('.subject-check:checked').length;
-      let langCount = document.querySelectorAll('.lang-check:checked').length;
-      let btn = document.getElementById('submitBtn');
-      let msg = document.getElementById('msg');
-
-      if (subjectCount!== 3) {
-      e.preventDefault();
-      alert('Exactly 3 subject select karna zaroori hai!');
-      return;
-      }
-      if (langCount === 0) {
-      e.preventDefault();
-      alert('Kam se kam 1 language to select karo!');
-      return;
-      }
-
-      btn.disabled = true;
-      btn.textContent = 'Submitting...';
-      msg.style.color = 'cyan';
-      msg.textContent = 'Please wait...';
-      });
-    </script>
-    </body>
-    </html>
-    
+  </script>
+  </body>
+                                 </html>
